@@ -53,3 +53,10 @@ pm2 start server.js --name=BackendAPI
 ```bash
 run: pm2 restart BackendAPI
 ```
+
+AWS cloud
+>sudo apt update
+<install Nodejs for linux>
+>sudo apt-get install -y nginx
+>sudo npm i -g pm2
+

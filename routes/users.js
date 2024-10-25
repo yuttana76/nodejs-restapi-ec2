@@ -10,19 +10,27 @@ const {
 
 const router = express.Router();
 
-// create a user
-router.post("/", createUser);
+router.get("/products", (req, res)=>{
+  res.status(200).json({
+    message : 'Your product list'
+  })
+});
 
-// get all users
-router.get("/", getUsers);
 
-// get a user
-router.get("/:id", getUser);
+// // create a user
+// router.post("/", createUser);
 
-// update a user
-router.put("/:id", updateUser);
+// // get all users
+// router.get("/", getUsers);
 
-// delete a user
-router.delete("/:id", deleteUser);
+
+// // get a user
+// router.get("/:id", getUser);
+
+// // update a user
+// router.put("/:id", updateUser);
+
+// // delete a user
+// router.delete("/:id", deleteUser);
 
 module.exports = router;
