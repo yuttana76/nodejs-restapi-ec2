@@ -31,6 +31,8 @@ cd /etc/nginx/sites-available
 
 sudo nano default
 
+sudo nano /etc/nginx/sites-available/default
+
 location /api {
 	rewrite ^\/api\/(.*)$ /api/$1 break;
 	proxy_pass  http://localhost:5000;
@@ -57,6 +59,11 @@ run: pm2 restart BackendAPI
 AWS cloud
 >sudo apt update
 <install Nodejs for linux>
+>curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+
 >sudo apt-get install -y nginx
 >sudo npm i -g pm2
 
+Github / Background running
+>sudo ./svc.sh install
+>sudo ./svc.sh start
