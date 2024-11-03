@@ -1,3 +1,6 @@
+## AWS URL:
+http://13.55.153.44/api
+
 ## Getting Started
 
 -   STEP1 - Login to AWS console and create EC2 instance
